@@ -53,7 +53,6 @@ main section textarea{
     font-size: 1.8rem;
     border-radius: 16px;
     resize: none;
-    overflow:;
     outline: none;
     border: none;
     text-align: center;
@@ -67,33 +66,29 @@ main section textarea{
     border-radius: 16px;
 }
 .imagen__Desencriptar{
-    width: 30rem;
-    height: 30rem;
-    position: absolute;
     display: none;
 }
-#textarea__Encriptar{
+#textarea__Entrada{
     min-height: 30rem;
     background-color: transparent;
     color: #021526;
     font-weight: 400;
     font-size: 3rem;
 }
-#textarea__Desencriptar{
+#textarea__Salida{
     min-height: 10rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur (1px);
     color: #021526;
     font-weight: 300;
     font-size: 1.8rem;
-
 }
-#textarea__Encriptar::placeholder{
+#textarea__Entrada::placeholder{
     color: #021526;
     font-weight: 400;
     font-size: 3rem;
 }
-#textarea__Desencriptar::placeholder{
+#textarea__Salida::placeholder{
     color: #021526;
     font-weight: 300;
     font-size: 1.8rem;
@@ -115,6 +110,9 @@ button{
 .boton__Encriptar{
     background-color: #021526;
     color: white;
+}
+.boton__Copiar{
+    display: none;
 }
 p{
     color: #E2E2B6;
@@ -143,7 +141,6 @@ div img{
     width: 3rem;
     height: 3rem;   
 }
-
 @media(min-width: 600px){
     h1{
         display: block;
@@ -165,8 +162,10 @@ div img{
     .seccion__Desencriptar{
         max-width: 65rem;
     }
+    .imagen__Desencriptar{
+        display: none;
+    }
 }
-
 @media(min-width: 900px){
     main{
         flex-flow: row nowrap;
@@ -178,11 +177,13 @@ div img{
         margin-right: 2rem;
         min-height: 80vh;
     }
-    #textarea__Desencriptar{
-        min-height: 69vh;
-        background: ;
+    #textarea__Salida{
+        min-height: 75vh;
     }
     .imagen__Desencriptar{
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
         display: block;
     }
     .seccion__Encriptar{
@@ -194,7 +195,7 @@ div img{
         align-items: center;
         justify-content: space-between;
     }
-    #textarea__Encriptar{
+    #textarea__Entrada{
         min-height: 40rem;
         text-align: start;
     }
@@ -208,6 +209,7 @@ div img{
     }
     .boton__Copiar{
         width: 90%;
+        display: none;
     }
 }
 @media(min-width: 1242px){
@@ -230,9 +232,6 @@ div img{
     .seccion__Encriptar{
         max-width: 90rem;
     }
-    #textarea__Encriptar{
-        min-height:;
-    }
     .seccion__Desencriptar{
         max-width: 30rem;
     }
@@ -242,5 +241,6 @@ div img{
     footer{
         height: 12vh;
         flex-flow: row nowrap;
+        padding-top: 2rem;
     }
 }
