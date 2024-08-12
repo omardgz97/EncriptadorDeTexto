@@ -1,5 +1,4 @@
 //-------------Manejo del DOM--------------------//
-const seccionEncriptar = document.getElementsByClassName('seccion__Encriptar')[0];
 const textAreaEntrada = document.getElementById('textarea__Entrada');
 const botonEncriptar = document.getElementsByClassName('boton__Encriptar')[0];
 const botonDesencriptar = document.getElementsByClassName('boton__Desencriptar')[0];
