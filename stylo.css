@@ -64,6 +64,7 @@ main section textarea{
 }
 .seccion__Salida{
     background: rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
 }
 #textarea__Entrada{
     min-height: 30rem;
@@ -79,9 +80,9 @@ main section textarea{
     font-weight: 300;
     font-size: 1.8rem;
 }
-/*.imagen__Desencriptar{
+.imagen__Desencriptar{
     display: none;
-}*/
+}
 
 /*-------------------------------------------------------------------*/
 
@@ -191,6 +192,16 @@ div img{
         min-width: 23rem;
         max-width: 30rem;
     }
+    #textarea__Salida{
+        position: relative;
+    }
+    .imagen__Desencriptar{
+        width: 100%;
+        max-width: 26rem;
+        display: block;
+        position: absolute;
+        top: 20rem;
+    }
     #textarea__Entrada{
         text-align: left;
     }
@@ -201,7 +212,11 @@ div img{
         flex-flow: row nowrap;
     }
     button{
-        height: 3.3rem;
+        height: 4rem;
+    }
+    button:hover{
+        color: black;
+        background-color: #6EACDA;
     }
     .boton__Copiar{
         width: 100%;
