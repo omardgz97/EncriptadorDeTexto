@@ -11,7 +11,7 @@ const todosLosBotones = document.getElementsByTagName('button');
 //----------------------Funciones para botones Encriptar, Desencriptar y Copiar--------------------------//
 
 botonEncriptar.addEventListener('click', function(){
-    verificacionDeTextoValido()
+    verificacionDeTextoValido();
     let textoEncriptado = encriptar(textAreaEntrada.value);
     textAreaSalida.value = textoEncriptado;
     ocultarBotonCopiar();
@@ -19,7 +19,7 @@ botonEncriptar.addEventListener('click', function(){
 });
 
 botonDesencriptar.addEventListener('click', function(){
-    verificacionDeTextoValido()
+    verificacionDeTextoValido();
     let textoDesencriptado = desencriptar(textAreaEntrada.value);
     textAreaSalida.value = textoDesencriptado;
     ocultarBotonCopiar();
@@ -77,7 +77,7 @@ function ocultarBotonCopiar(){
     } else {
         botonCopiar.style.display = 'block';
         textAreaSalida.style.height = '90%';
-    }
+    };
 };
 
 function ocultarImagen(){
@@ -85,7 +85,7 @@ function ocultarImagen(){
         textAreaSalida.value === '' ? imagenDesencriptar.style.display = 'block' : imagenDesencriptar.style.display = 'none';
     } else {
         imagenDesencriptar.style.display = 'none';
-    }
+    };
 };
 
 //------------------------FUNCIONES PARA ENCRIPTAR Y DESENCRIPTAR EL CODIGO-------------------------------//
@@ -113,7 +113,7 @@ function encriptar(texto){
         }
     });
     return arrayEncriptado.join('');
-}
+};
 
 function desencriptar(texto){
     texto = texto.replace(/ai/g, 'a');
@@ -122,4 +122,4 @@ function desencriptar(texto){
     texto = texto.replace(/ober/g, 'o');
     texto = texto.replace(/ufat/g, 'u');
     return texto;
-}
+};
