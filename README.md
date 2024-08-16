@@ -1,4 +1,4 @@
-<img src="/imagenes/tituloReadme.png">
+<img src="./imagenes/tituloReadmeR.png">
 
 ### Descripción del Proyecto! 🔒
 
@@ -9,4 +9,4 @@
 - Ningún framework fué utilizado durante la construcción.
 - Es 100% responsive ya que todo ha sido trabajado con medidas relativas y ha sido testeado en diferentes tamaños de pantallas.
 
-
+<img src="./imagenes/screenshots.png" alt="">
